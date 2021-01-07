@@ -12,4 +12,6 @@ Park.prototype.removeDino = function (dino) {
     this.dinoCollection.pop(dino);
 };
 
+Park.prototype.hasMostVisitors = function (dino) ;
+
 module.exports = Park;
