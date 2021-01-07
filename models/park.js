@@ -4,4 +4,8 @@ const Park = function(parkName, ticketPrice) {
     this.dinoCollection = [];
 }
 
+Park.prototype.addDino = function (dino) {
+    this.dinoCollection.push(dino);
+};
+
 module.exports = Park;
