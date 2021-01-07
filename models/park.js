@@ -8,4 +8,8 @@ Park.prototype.addDino = function (dino) {
     this.dinoCollection.push(dino);
 };
 
+Park.prototype.removeDino = function (dino) {
+    this.dinoCollection.pop(dino);
+};
+
 module.exports = Park;
