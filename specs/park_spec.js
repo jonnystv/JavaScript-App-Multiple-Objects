@@ -14,11 +14,11 @@ describe('Park', function() {
 
   beforeEach(function () {
     dino1 = new Dinosaur('ALGOL 58', 'carnivore', 70);
-    dino1 = new Dinosaur('ALGOL 58', 'carnivore', 60);
-    dino1 = new Dinosaur('Simula', 'omnivore', 50);
-    dino1 = new Dinosaur('Simula', 'omnivore', 40);
-    dino1 = new Dinosaur('SNOBOL', 'herbivore', 30);
-    dino1 = new Dinosaur('SNOBOL', 'herbivore', 20);
+    dino2 = new Dinosaur('ALGOL 58', 'carnivore', 60);
+    dino3 = new Dinosaur('Simula', 'omnivore', 50);
+    dino4 = new Dinosaur('Simula', 'omnivore', 40);
+    dino5 = new Dinosaur('SNOBOL', 'herbivore', 30);
+    dino6 = new Dinosaur('SNOBOL', 'herbivore', 20);
     park = new Park('Jurassic Code', 35);  
   });
 
@@ -27,7 +27,10 @@ describe('Park', function() {
     assert.strictEqual(actual, 'Jurassic Code');
   });
 
-  it('should have a ticket price');
+  it('should have a ticket price', function () {
+    const actual = park.ticketPrice;
+    assert.strictEqual(actual, 35);
+  });
 
   it('should have a collection of dinosaurs');
 
